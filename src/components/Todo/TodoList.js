@@ -4,7 +4,9 @@ import Todos from './Todos';
 
 const TodoList = () => {
 	const [inputText, setInputText] = useState('');
+	const [status, setStatus] = useState('all');
 	const [todos, setTodos] = useState([]);
+	const [filteredTodos, setFileredTodos] = useState([]);
 
 	return (
 		<React.Fragment>
@@ -13,8 +15,9 @@ const TodoList = () => {
 				inputText={inputText}
 				setTodos={setTodos}
 				todos={todos}
+				setStatus={setStatus}
 			/>
-			<Todos todos={todos} />
+			<Todos setTodos={setTodos} todos={todos} />
 		</React.Fragment>
 	);
 };
