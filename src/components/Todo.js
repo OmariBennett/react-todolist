@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Todo = ({ todo, setTodos, todos }) => {
+const Todo = ({ setTodos, todo, todos }) => {
 	const { text } = todo;
 
 	const deleteHander = () => {

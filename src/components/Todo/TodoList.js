@@ -49,12 +49,12 @@ const TodoList = () => {
 		<React.Fragment>
 			<Form
 				setInputText={setInputText}
-				inputText={inputText}
 				setTodos={setTodos}
-				todos={todos}
 				setStatus={setStatus}
+				inputText={inputText}
+				todos={todos}
 			/>
-			<Todos setTodos={setTodos} todos={todos} filteredTodos={filteredTodos} />
+			<Todos todos={todos} filteredTodos={filteredTodos} setTodos={setTodos} />
 		</React.Fragment>
 	);
 };

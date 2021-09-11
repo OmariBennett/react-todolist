@@ -1,7 +1,7 @@
 import React from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
-const Form = ({ setInputText, setTodos, inputText, todos, setStatus }) => {
+const Form = ({ setInputText, setTodos, setStatus, inputText, todos }) => {
 	const inputTextHandler = (e) => {
 		setInputText(e.target.value);
 	};
